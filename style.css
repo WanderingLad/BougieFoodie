@@ -1,118 +1,78 @@
-:root
-{
-    --header-color: rgb(245, 117, 106);
-
-    --text-color: rgb(54, 56, 97);
+body{
+    background-color: rgba(214, 216, 209, 0.856);
 }
 
-body
-{
-    min-height: 100vh;
+
+.containers{
+  display: flex;
+  justify-content:center;
+  margin: 80px;
+  align-self: center;
+  padding: 10px 10px 20px 10px;
+  box-shadow: 10px 10px 8px #888888;
+   
 }
-
-.row
-{
-    display: flex;
-    height:100%;
-}
-
-.col
-{
-    width:50%;
-}
-
-a, a:visited, a:hover, a:active
-{
-    text-decoration: none;
-
-    color: var(--text-color);
-}
-
-header, footer
-{
-    background-color: var(--header-color);
-
-    text-align: center;
-
-    padding: 1rem 0 1rem 0;
-}
-
-ul
-{
-    list-style-type: none;
-}
-
-.header-links
-{
-    list-style-type: none;
-    display: inline-flex;
-}
-
-.sidenav 
-{
-    width:10%;
-    height:100%;
-    background-color: #111; 
-    overflow-y: overflow; 
-}
-
-.local-sidebar, .suggested-sidebar
-{
-    height:50%;
-}
-
-#main-content
-{
-    width: 90%;
-}
-
-main
-{
-    height: 100vh;
-}
-
-.header-list
-{
-    margin: 0 5rem 0 5rem;
-}
-
-#header-logo
-{
-    max-width: 25%;
-    max-height: 25%;
-
-    margin: 0 0 1rem 0;
-}
-
-#footer-logo
-{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#footer-nav
-{
-    display: flex;
-    justify-content: center;
-}
-
-#footer-div h2
-{
-    width: 50%;
-}
-
-#footer-links
-{
-    text-align: left;
-
-}
-
-.footer-font
-{
-    font-size: 2rem;
+  
+  #nav-text{
+    float: left;
+    padding: 10px;
+    background: white;
     font-weight: bold;
+    margin-bottom:0;
+    width: 100%;
+    text-align: center;
+    border: solid black;
+    margin-top: 0px;
+    font-size: xxx-large;
+    font-family:Georgia;
+    box-shadow: 10px 10px 8px #888888;
+    
+   }
 
-    padding: 0 0 0.5rem 0;
+   #food-pic{
+    height: 380px;
+    width: 1360px ;
+   }
+ 
+  .first-box, .second-box {
+    width:500px; 
+    background: white; 
+    height: 490px;
+    border: solid black;
+     
+  }
+  
+  .first-box p {
+    color: black;
+    padding-left: 160px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: x-large;
+    font-family:Georgia;
+    
+  }
+  
+   .second-box p {
+    color:black;
+    padding-left: 200px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: x-large;
+    font-family:Georgia;
+    
+  }
+  
+  .recipe-form-container{
+    font-size: 2.4rem;
+	  text-align: center;
+	  color:white;
+    flex: auto;
+  }
 
-    color: var(--text-color);
-}
+  input {
+    margin-bottom: 2px;
+    width: 35rem;
+    padding:1.5rem;
+    font-size:medium;
+    box-shadow: 1 0.1rem 1.4 rem 0 black;
+  }
