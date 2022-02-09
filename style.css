@@ -7,7 +7,21 @@
 
 body
 {
-    min-height: 100vh;
+	background-color: rgba(214, 216, 209, 0.856);
+	
+	min-height: 100vh;
+}
+
+
+.containers
+{
+  display: flex;
+  justify-content:center;
+  margin: 80px;
+  align-self: center;
+  padding: 10px 10px 20px 10px;
+  box-shadow: 10px 10px 8px #888888;
+   
 }
 
 .row
@@ -36,7 +50,7 @@ header, footer
 
     padding: 1rem 0 1rem 0;
 }
-
+  
 ul
 {
     list-style-type: none;
@@ -116,3 +130,32 @@ main
 
     color: var(--text-color);
 }
+ 
+  .first-box, .second-box 
+{
+    width:500px; 
+    background: white; 
+    height: 490px;
+    border: solid black;
+     
+  }
+  
+  .first-box p {
+    color: black;
+    padding-left: 160px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: x-large;
+    font-family:Georgia;
+    
+  }
+  
+   .second-box p {
+    color:black;
+    padding-left: 200px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: x-large;
+    font-family:Georgia;
+    
+  }
