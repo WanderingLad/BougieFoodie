@@ -3,52 +3,37 @@
     --header-color: rgb(245, 117, 106);
 
     --text-color: rgb(54, 56, 97);
+
+    --background-color: #85DCBD;
+
+    --sidebar-color: #C38D9E;
+
+    --searchbar-color: #41B3A3; 
 }
 
 body
 {
 	background-color: rgba(214, 216, 209, 0.856);
-	
-	min-height: 100vh;
 }
 
-
-.containers
+hr
 {
-  display: flex;
-  justify-content:center;
-  margin: 80px;
-  align-self: center;
-  padding: 10px 10px 20px 10px;
-  box-shadow: 10px 10px 8px #888888;
-   
+    border-top: 1px solid black;
 }
 
 .row
 {
-    display: flex;
-    height:100%;
-}
-
-.col
-{
-    width:50%;
+    margin:0;
 }
 
 a, a:visited, a:hover, a:active
 {
     text-decoration: none;
-
-    color: var(--text-color);
 }
 
 header, footer
 {
     background-color: var(--header-color);
-
-    text-align: center;
-
-    padding: 1rem 0 1rem 0;
 }
   
 ul
@@ -59,74 +44,18 @@ ul
 .header-links
 {
     list-style-type: none;
-    display: inline-flex;
 }
 
 .sidenav 
 {
-    width:10%;
-    height:100%;
-    background-color: #111; 
     overflow-y: overflow; 
 }
 
-.local-sidebar, .suggested-sidebar
-{
-    height:50%;
-}
-
-#main-content
-{
-    width: 90%;
-}
-
-main
-{
-    height: 100vh;
-}
-
-.header-list
-{
-    margin: 0 5rem 0 5rem;
-}
-
-#header-logo
-{
-    max-width: 25%;
-    max-height: 25%;
-
-    margin: 0 0 1rem 0;
-}
-
-#footer-logo
-{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#footer-nav
-{
-    display: flex;
-    justify-content: center;
-}
-
-#footer-div h2
-{
-    width: 50%;
-}
-
-#footer-links
-{
-    text-align: left;
-
-}
 
 .footer-font
 {
     font-size: 2rem;
     font-weight: bold;
-
-    padding: 0 0 0.5rem 0;
 
     color: var(--text-color);
 }
@@ -134,28 +63,14 @@ main
   .first-box, .second-box 
 {
     width:500px; 
-    background: white; 
-    height: 490px;
+    height: 500px;
     border: solid black;
      
   }
   
-  .first-box p {
-    color: black;
-    padding-left: 160px;
-    padding-top: 50px;
+  .first-box p, .second-box p {
     font-weight: bold;
-    font-size: x-large;
-    font-family:Georgia;
-    
-  }
-  
-   .second-box p {
-    color:black;
-    padding-left: 200px;
-    padding-top: 50px;
-    font-weight: bold;
-    font-size: x-large;
+    font-size: 2rem;
     font-family:Georgia;
     
   }
