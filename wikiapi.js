@@ -1,6 +1,6 @@
 var search = document.getElementById("btn");
 var input = document.getElementById("input");
-
+var wikiFrame = document.getElementById("wikiframe");
 search.addEventListener('click', getWiki);
 function getWiki(){
     var englishWiki = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&list=search&srsearch=" + input.value;
@@ -10,10 +10,7 @@ function getWiki(){
     })
     .then(function(data){
         console.log(data)
-        var i=data.query.search.length;
-        console.log(i);
+        console.log(data.query.search[0].snippet)
+        wikiFrame.setAttribute("src", "http://en.wikipedia.org/?curid="+ data.query.search[0].pageid);
     });
 }
-
-
-//http://en.wikipedia.org/?curid=18630637 curid equals the pageid datapoint. so pageid can be inserted as a parameter into url to bring up page 

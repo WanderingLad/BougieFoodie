@@ -137,7 +137,9 @@ main
     background: white; 
     height: 490px;
     border: solid black;
-     
+     /* THESE TWO LINES ARE NEEDED FOR IFRAME ON WIKIAPI */
+    overflow: hidden;
+    position : relative;
   }
   
   .first-box p {
@@ -159,3 +161,13 @@ main
     font-family:Georgia;
     
   }
+
+
+iframe
+{
+    position : absolute;
+    top      : -100px;
+    left     : -150px;
+    width: 130%;
+    height: 130%;
+}
