@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./reset.css" />
-
     <link href="./style.css" rel="stylesheet" />
     <title>BougieFoodie</title>
 </head>
@@ -25,15 +24,15 @@
                         <a href="#footer">About The Team</a>
                     </li>
 
-                    <li class="mx-5"">
+                    <li class="mx-5">
                         <a href="#">Find Your Food</a>
                     </li>
 
-                    <li class="mx-5"">
+                    <li class="mx-5">
                         <a href="#">Watch How It's Done</a>
                     </li>
 
-                    <li class="mx-5"">
+                    <li class="mx-5">
                         <a href="#">Learn A Little</a>
                     </li>
                 </ul>
@@ -44,11 +43,11 @@
     <main>
 
         <section class="text-center py-3" style="background-color: var(--searchbar-color);">
-            <strong>Search For Something</strong>
+            <strong>Search a Recipe!</strong>
             <form id="search-bar" class="d-flex justify-content-center mt-3">
-                <input id="search-field" type="search" name="search-field" class="form-control rounded w-50 mx-3" placeholder="Enter City"/>
+                <input id="search-field" type="search" name="search-field" class="form-control rounded w-50 mx-3" placeholder="Enter a Food"/>
                     
-                <button id="search-button" type="submit" class="btn btn-outline-primary h-50 mt-auto" form="search-form">Search</button>
+                <button id="search-button" type="submit" class="btn btn-outline-primary h-50 mt-auto" form="search-bar">Search</button>
             </form>
         </section>
 
@@ -76,22 +75,25 @@
             
             <div class="col d-flex justify-content-center align-items-center" id="main-content" style="background-color: var(--background-color);">
                 <div class="d-flex text-center">
-                    <div class="first-box">
+                    
+                    <div id="ytvids" class="content-box justify-content-center align-items-center text-center">
                         <p>Recipe Videos</p>
+                        <iframe id="video" width="400" height="400" src="" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-            <div id="main-content">Insert Main Content
-            <div class="containers">
-                <div id="ytvids" class="first-box">
-                    <p>Recipe Videos</p>
-                    <iframe id="video" width="400" height="255" src="" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                    gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
 
-                    <div class="second-box">
+                    <div class="content-box">
                         <p>Wikipedia Box</p>
+                        <div>
+                            <p id="wiki-text-area">
+
+                            </p>
+                        </div>
                     </div>
+                    
+                </div>
             </div>
         </section>
     </main>
@@ -128,8 +130,6 @@
     </footer>
 </body>
 
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script type="text/javascript" src="./script.js"></script>
