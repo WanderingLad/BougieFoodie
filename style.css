@@ -60,7 +60,7 @@ ul
     color: var(--text-color);
 }
  
-  .first-box, .second-box 
+  .content-box
 {
     width:500px; 
     height: 500px;
@@ -68,7 +68,7 @@ ul
      
   }
   
-  .first-box p, .second-box p {
+  .content-box p {
     font-weight: bold;
     font-size: 2rem;
     font-family:Georgia;
