@@ -8,13 +8,6 @@ $("#search-bar").submit(function (event)
     var url = `https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&list=search&srsearch=${searchFieldVal}`;
 
     fetch(url)
-var search = document.getElementById("btn");
-var input = document.getElementById("input");
-var wikiFrame = document.getElementById("wikiframe");
-search.addEventListener('click', getWiki);
-function getWiki(){
-    var englishWiki = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&list=search&srsearch=" + input.value;
-    fetch(englishWiki)
     .then(function(response){
         return response.json();
     })
