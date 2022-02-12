@@ -12,11 +12,17 @@
 </head>
 
 <!-- Two Boxes - 1 for Recipe videos and 1 for Wikipedia info-->
+
 <body>
     <header class="py-3 text-center">
         <div>
             <h2>
+
+                <a href="."><img id="header-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos.jpeg"
+                        alt="Bougie Foodie Logo" /></a>
+
                 <a href="."><img id="header-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos.jpeg" alt="Bougie Foodie Logo" class="mh-25 mw-25 mb-3" /></a>
+
             </h2>
             <nav>
                 <ul class="header-links d-inline-flex">
@@ -39,7 +45,7 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
 
         <section class="text-center py-3" style="background-color: var(--searchbar-color);">
@@ -58,6 +64,16 @@
                         <li class="py-3">Here's something that we did before</li>
                     </ul>
                 </div>
+
+                <div class="suggested-sidebar">
+                    <input id="input">
+                    <button id="btn">Search</button>
+                    <ul id="suggested-list">
+                        <li>
+                            <img src="./Bougie Foodie-logos/Bougie Foodie-logos_white.png"
+                                style="height: 75%; width: 75%;">
+                            <p style="color: white;">Test Card Without Bootstrap</p>
+
                 <hr class="border-top-3 text-white">
                 <div class="h-50">
                     <ul id="suggested-list">
@@ -68,10 +84,37 @@
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-outline-primary">Go somewhere</a>
                             </div>
+
                         </li>
                     </ul>
                 </div>
             </div>
+
+
+            <div id="main-content">Insert Main Content
+                <div class="containers">
+                    <div class="first-box">
+                        <p>Recipe Videos</p>
+                    </div>
+
+                    <div class="second-box">
+                        <p>Wikipedia Box</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer id="footer">
+        <div class="row">
+            <h2 class="col">
+                <a href="."><img id="footer-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos.jpeg"
+                        alt="Bougie Foodie Logo" /></a>
+            </h2>
+            <nav id="footer-nav" class="col">
+                <ul id="footer-links">
+                    <li class="footer-font">
+                        <p>Meet The Team: </p>
+
             
             <div class="col d-flex justify-content-center align-items-center" id="main-content" style="background-color: var(--background-color);">
                 <div class="d-flex text-center">
@@ -107,6 +150,7 @@
                 <ul>
                     <li>
                         <h2>Meet The Team: </h2>
+
                     </li>
 
                     <li class="footer-font">
@@ -129,6 +173,8 @@
         </div>
     </footer>
 </body>
+<script src="./script.js"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
@@ -136,3 +182,4 @@
 <script type="text/javascript" src="./wikiapi.js"></script>
 
 </html>
+
