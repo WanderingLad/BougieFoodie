@@ -65,7 +65,7 @@ ul
     width:500px; 
     height: 500px;
     border: solid black;
-     
+    
   }
   
   .content-box p {
@@ -73,4 +73,19 @@ ul
     font-size: 2rem;
     font-family:Georgia;
     
+  }
+
+.wikibox
+{
+  /* Next two lines for wiki iframe */
+  overflow: hidden;
+  position: relative;
+}
+
+  #wikiframe {
+    position : absolute;
+    top      : -100px;
+    left     : -150px;
+    width: 130%;
+    height: 130%;
   }
