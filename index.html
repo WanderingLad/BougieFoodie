@@ -17,12 +17,7 @@
     <header class="py-3 text-center">
         <div>
             <h2>
-
-                <a href="."><img id="header-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos.jpeg"
-                        alt="Bougie Foodie Logo" /></a>
-
                 <a href="."><img id="header-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos.jpeg" alt="Bougie Foodie Logo" class="mh-25 mw-25 mb-3" /></a>
-
             </h2>
             <nav>
                 <ul class="header-links d-inline-flex">
@@ -59,22 +54,14 @@
 
         <section class="row vh-100">       
             <div class="sidenav col-2" style="background-color: var(--sidebar-color);">
-                <div class="h-50">
+                <div class="h-50 text-center">
                     <ul id="local-list">
-                        <li class="py-3">Here's something that we did before</li>
                     </ul>
+                    <button id="reset-button" type="submit" class="btn btn-outline-primary mt-auto">Reset Local Storage</button>
                 </div>
 
-                <div class="suggested-sidebar">
-                    <input id="input">
-                    <button id="btn">Search</button>
-                    <ul id="suggested-list">
-                        <li>
-                            <img src="./Bougie Foodie-logos/Bougie Foodie-logos_white.png"
-                                style="height: 75%; width: 75%;">
-                            <p style="color: white;">Test Card Without Bootstrap</p>
-
                 <hr class="border-top-3 text-white">
+
                 <div class="h-50">
                     <ul id="suggested-list">
                         <li class="card text-center" style="background-color: inherit;">
@@ -91,50 +78,27 @@
             </div>
 
 
-            <div id="main-content">Insert Main Content
-                <div class="containers">
-                    <div class="first-box">
-                        <p>Recipe Videos</p>
-                    </div>
-
-                    <div class="second-box">
-                        <p>Wikipedia Box</p>
-                    </div>
-                </div>
-            </div>
-    </main>
-
-    <footer id="footer">
-        <div class="row">
-            <h2 class="col">
-                <a href="."><img id="footer-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos.jpeg"
-                        alt="Bougie Foodie Logo" /></a>
-            </h2>
-            <nav id="footer-nav" class="col">
-                <ul id="footer-links">
-                    <li class="footer-font">
-                        <p>Meet The Team: </p>
-
-            
             <div class="col d-flex justify-content-center align-items-center" id="main-content" style="background-color: var(--background-color);">
                 <div class="d-flex text-center">
                     
-                    <div id="ytvids" class="content-box justify-content-center align-items-center text-center">
-                        <!-- <p>Recipe Videos</p> -->
-                        <iframe id="video" width="500" height="500" src="" 
+                    <div class="content-box justify-content-center align-items-center text-center">
+                        <p>Recipe Videos</p>
+                        <iframe id="video" width="400" height="400" src="" 
                         title="YouTube video player" frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                         gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <div class="content-box wikibox">
-                        <!-- <p>Wikipedia Box</p> -->
+                        <p>Wikipedia Box</p>
                         <iframe id="wikiframe" src="" frameborder="0"></iframe>
                     </div>
                     
                 </div>
             </div>
-        </section>
+    </main>
+
+    
     </main>
     
     <footer class="py-3 d-flex text-center justify-content-center">
@@ -142,7 +106,7 @@
 
             <a href="#" class="m-5"><img id="footer-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos.jpeg" alt="Bougie Foodie Logo" /></a>
             
-            <nav class="col">
+            <nav class="">
                 <ul>
                     <li>
                         <h2>Meet The Team: </h2>
@@ -169,13 +133,10 @@
         </div>
     </footer>
 </body>
-<script src="./script.js"></script>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script type="text/javascript" src="./script.js"></script>
-<script type="text/javascript" src="./wikiapi.js"></script>
 
 </html>
 

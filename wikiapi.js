@@ -1,6 +1,5 @@
  $("#search-bar").submit(function (event)
  {
-
      event.preventDefault();
 
      var searchFieldVal = $("#search-field").val();
