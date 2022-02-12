@@ -17,7 +17,7 @@
     <header class="py-3 text-center">
         <div>
             <h2>
-                <a href="."><img id="header-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos.jpeg" alt="Bougie Foodie Logo" class="mh-25 mw-25 mb-3" /></a>
+                <a href="."><img id="header-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos_transparent.png" alt="Bougie Foodie Logo" class="mh-25 mw-25 mb-3" /></a>
             </h2>
             <nav>
                 <ul class="header-links d-inline-flex">
@@ -52,9 +52,10 @@
             </form>
         </section>
 
-        <section class="row vh-100">       
+        <section class="row">       
             <div class="sidenav col-2" style="background-color: var(--sidebar-color);">
                 <div class="h-50 text-center">
+                    <p class="h2 text-left">Recent Searches: </p>
                     <ul id="local-list">
                     </ul>
                     <button id="reset-button" type="submit" class="btn btn-outline-primary mt-auto">Reset Local Storage</button>
@@ -63,6 +64,7 @@
                 <hr class="border-top-3 text-white">
 
                 <div class="h-50">
+                    <p class="h2">Related Searches: </p>
                     <ul id="suggested-list">
                         <li class="card text-center" style="background-color: inherit;">
                             <img class="card-img-top" src="./Bougie Foodie-logos/Bougie Foodie-logos_white.png" alt="Card image cap">
@@ -79,33 +81,42 @@
 
 
             <div class="col d-flex justify-content-center align-items-center row" id="main-content" style="background-color: var(--background-color);">
-                <div class="d-flex text-center">
+                <div class="d-flex text-center py-5">
                     
-                    <div class="content-box justify-content-center align-items-center text-center">
-                        
-                        <iframe id="video" width="500" height="500" src="" 
+                    <div class="content-box w-50 justify-content-center align-items-center text-center pb-3 mr-3">
+                        <p>
+                            Below you will find a youtube video linked to help show you how to make this recipe! 
+                        </p>
+                        <iframe id="video" class="h-100 w-100" src="" 
                         title="YouTube video player" frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                         gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
-                    <div class="content-box wikibox">
-                       
-                        <iframe id="wikiframe" src="" frameborder="0"></iframe>
+                    <div class="content-box w-50 pb-3 ml-3">
+                        <div>
+                            <p>
+                            Below is a wikipedia article that gives you  little background on your recipe. You can share this with your friends (or pets) and get a little bougie with your food(ie).
+                            </p>
+                        </div>
+                        
+                        <div class="h-100 position-relative overflow-hidden">
+                            <iframe class="pb-3 position-absolute" id="wikiframe" src="" frameborder="0"></iframe>
+                        </div>
                     </div>
                     
                 </div>
-                <div class=" text-center" id="about">
-                    <h3>About Us</h3>
-                    <p id ="description">
+                <div class="text-center my-4 px-4">
+                    <p class="h3 font-weight-bold">About Us</p>
+                    <p class="description">
                         Our team is made up of professionals from different backgrounds and interests, with hopes to pivot into the field of web development. 
                         Currently, we are enrolled part-time in Georgia Tech’s Full Stack Coding Boot Camp. Collectively, we have a wide range of experiences from the food industry, 
                         international education, manual labor, and the tech field. Although we may have different life experiences, we came together with a common goal to create the BougieFoodie. 
                         We hope you enjoy our project!
-                        </p>
-                        <br>
-                        <p id="description">
-                        Why BougieFoodie was created?
+                    </p>
+
+                    <p class="h3 mt-5 font-weight-bold">Why BougieFoodie?</p>
+                    <p class="mb-3 description" >
                         The concept came about after we discovered our team’s deep passion for food and social media. 
                         We wanted to design a space where the beginner and expert cooks could not only search for their favorite recipes 
                         but watch how the meal is prepared while learning the origin/history of the dish simultaneously.
@@ -120,7 +131,7 @@
     <footer class="py-3 d-flex text-center justify-content-center">
         <div class="row">
 
-            <a href="#" class="m-5"><img id="footer-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos.jpeg" alt="Bougie Foodie Logo" /></a>
+            <a href="#" class="m-5"><img id="footer-logo" src="./Bougie Foodie-logos/Bougie Foodie-logos_transparent.png" alt="Bougie Foodie Logo" /></a>
             
             <nav class="">
                 <ul>
