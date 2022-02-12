@@ -1,56 +1,109 @@
+var localList = document.querySelector("#local-list");
 
-var apiKey = 'AIzaSyB84GbD7RpiItTnqRXSgGmgQdDJOOYUx8M';
-var search = document.getElementById("btn");
-var input = document.getElementById("input");
+var localStore = [];
 
-// function getApi() {
-//     var url = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&q='+input.value+'&key=AIzaSyB84GbD7RpiItTnqRXSgGmgQdDJOOYUx8M'
-//     fetch(url)
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function(data) {
-//         console.log(data);
-//     });
-// }  
-// search.addEventListener('click',getApi);
+var APIKEY ='AIzaSyB84GbD7RpiItTnqRXSgGmgQdDJOOYUx8M';  
 
+$(document).ready(function()
+{
+    if(JSON.parse(localStorage.getItem('history')))
+    {
+      var tempLocal = JSON.parse(localStorage.getItem('history'));
 
-//-------
-
-// When user searches in main bar, I need to grab value
-var storeItem = localStorage.getItem("history");//JSON.parse (return)
-storeItem = JSON.parse(storeItem)
-var results = [];
-search.onclick = savedResults;
-
-function savedResults() {
-  var saveValue = input.value;
-  results.push(saveValue);
-  localStorage.setItem("history", JSON.stringify(results));
-  //JSON.stringify results
-}
-// Needs to save to previous search section
-// I want all the values to remain on the page
-
-var apiKey ='AIzaSyB84GbD7RpiItTnqRXSgGmgQdDJOOYUx8M';  
+      for(const el of tempLocal)
+      {
+        addItemToList(el);
+      }
+    }
+})
 
 $("#search-bar").submit(function (event) 
 {
+
   event.preventDefault();
-  
+
+  callSearch();
+
+  addItemToList($("#search-field").val());
+;
+});
+
+$("#reset-button").click(function()
+{
+    localStorage.removeItem('history');
+    localStorage.clear();
+
+    localStore.clear;
+
+    while (localList.firstChild) {
+        localList.removeChild(localList.firstChild);
+    }
+
+    location.reload();
+})
+
+$('#local-list').on('click', 'li button', function()
+{
+    console.log("1");
+
+    $("#search-field").val($(this).text());
+
+    callSearch();
+})
+
+function callSearch()
+{
   var searchFieldVal = $("#search-field").val();
 
-  var url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=how+to+make+${searchFieldVal}&key=AIzaSyB84GbD7RpiItTnqRXSgGmgQdDJOOYUx8M`;
+  var url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=how+to+make+${searchFieldVal}&key=${APIKEY}`;
 
   fetch(url)
-  .then(function (response) {
+  .then(function (response) 
+  {
     return response.json();
   })
-  .then(function(data) {
+  .then(function(data) 
+  {
 
-    $("#video").attr('src',"https://www.youtube.com/embed/"+data.items[0].id.videoId)
+    console.log(data);
+    var videoID = data.items[0].id.videoId;
+
+    $("#video").attr('src',`https://www.youtube.com/embed/${videoID}`);
 
   });
-}  );
+
+  var wikiFrame = $('#wikiframe');
+  var url = `https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&list=search&srsearch=${searchFieldVal}`;
+
+  fetch(url)
+  .then(function(response)
+  {
+      return response.json();
+  })
+  .then(function(data)
+  {
+      wikiFrame.attr("src", "http://en.wikipedia.org/?curid="+ data.query.search[0].pageid);
+  });
+}
+
+function addItemToList(fieldValue)
+{
+  var li = document.createElement("li");
+
+  var btn = document.createElement("button");
+
+  btn.classList.add("btn");
+  btn.classList.add("btn-outline-primary");
+  btn.classList.add("mt-3");
+
+  btn.textContent = fieldValue;
+
+  li.appendChild(btn);
+
+  localList.insertBefore(li, localList.firstChild);
+
+  localStore.push(fieldValue);
+
+  localStorage.setItem('history', JSON.stringify(localStore));
+}
 
