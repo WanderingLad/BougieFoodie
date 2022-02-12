@@ -44,8 +44,6 @@ $("#reset-button").click(function()
 
 $('#local-list').on('click', 'li button', function()
 {
-    console.log("1");
-
     $("#search-field").val($(this).text());
 
     callSearch();
@@ -55,7 +53,7 @@ function callSearch()
 {
   var searchFieldVal = $("#search-field").val();
 
-  var url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=how+to+make+${searchFieldVal}&key=${APIKEY}`;
+  /* var url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=how+to+make+${searchFieldVal}&key=${APIKEY}`;
 
   fetch(url)
   .then(function (response) 
@@ -70,7 +68,7 @@ function callSearch()
 
     $("#video").attr('src',`https://www.youtube.com/embed/${videoID}`);
 
-  });
+  }); */
 
   var wikiFrame = $('#wikiframe');
   var url = `https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&list=search&srsearch=${searchFieldVal}`;
