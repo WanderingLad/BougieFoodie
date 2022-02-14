@@ -88,7 +88,7 @@ function callSearch()
   })
   .then(function(data)
   {
-      wikiFrame.attr("src", "http://en.wikipedia.org/?curid="+ data.query.search[0].pageid);
+      wikiFrame.attr("src", "https://en.wikipedia.org/?curid=" + data.query.search[0].pageid);
   });
 }
 
