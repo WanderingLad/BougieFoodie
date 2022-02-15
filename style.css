@@ -88,7 +88,13 @@ ul
 
 }
 
- .btn{
+.image-btn
+{
+    cursor: pointer;
+}
+
+ .btn
+ {
      background-color:rgb(54, 56, 97);
      border-color:rgb(54, 56, 97); 
      color:white;
