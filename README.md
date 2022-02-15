@@ -1,35 +1,29 @@
-# project1main
+=======
+#BOUGIE FOODIE
 
-## SUBMITTED BY:  
-Michael Marlowe
-Jimmy Relly
-Marvin Bolanos
-Stephanie Mathis
+##The idea for BougieFoodie came about as a means to not only learn about the process 
+of making any given dish, but having a convenient space right there to learn about the cultural and
+historical relevance as well.
 
-## TEAM GOAL
-Create an application that allows the user to search for recipes, videos, and wikipedia information. This app will run in the browser.
+Much was learned about fetching API's in general for use as well as the whole project
+being a great exercise in teamwork and communication.
 
+Simply type in what you want in the search bar and be presented with a relevant
+wikipedia article on the subject as well as a choice of 4 youtube videos to be a 
+learning tool.
 
-## USER STORY
-AS A food enthusiast
-I WANT to be able to search for a recipe
-SO THAT I can learn how to cook amazing meals while learning about the true origin of the cuisine
+##CREDITS
 
-## ACCEPTANCE CRITERIA
+Jimmy Reilly, Marvin Bolanos, Stephanie Mathis and Michael Marlowe all collaborated 
+in a joint effort to bring the site to full functionality.
 
-GIVEN I am using a the BougieFoodie to search for recipes
-WHEN I type in a recipe in the search bar
-THEN the video is displayed along with the wikipedia information 
-WHEN 
-THEN 
+Jimmy Reilly: github.com/WanderingLad
+Marvin Bolanos: github.com/bo1anos
+Stephanie Mathis: github.com/Sdm1984
+Michael Marlowe: github.com/MarloweMich
 
+The english wikipedia API was utilized as well as the YouTube API.
 
-## SCREENSHOT OF GIF OF FUNCTIONALITY?
+![](2022-02-14-18-26-19.png)
 
-<img src=  style="width:600px;height:700;"/>
-
-
-
-
-
-
+Deployed site: https://marlowemich.github.io/BougieFoodie/

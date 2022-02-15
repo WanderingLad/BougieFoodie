@@ -86,3 +86,9 @@ ul
   font-size: 1.25rem;
 
 }
+
+figcaption{
+    color: var(--text-color);
+    size: 2;
+    line-height: .8;
+}
