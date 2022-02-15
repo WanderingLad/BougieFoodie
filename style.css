@@ -87,6 +87,7 @@ ul
   font-size: 1.25rem;
 
 }
+
  .btn{
      background-color:rgb(54, 56, 97);
      border-color:rgb(54, 56, 97); 
@@ -117,3 +118,11 @@ ul
      background-color:#2d2d2e;
      border-color: #2d2d2e;
  }
+
+
+figcaption{
+    color: var(--text-color);
+    size: 2;
+    line-height: .8;
+}
+
