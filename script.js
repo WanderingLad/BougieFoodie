@@ -69,13 +69,18 @@ function callSearch()
     window.suggID1 = data.items[1].id.videoId;
     window.suggID2 = data.items[2].id.videoId;
     window.suggID3 = data.items[3].id.videoId;
-
+    window.cap1 = data.items[1].snippet.title;
+    window.cap2 = data.items[2].snippet.title;
+    window.cap3 = data.items[3].snippet.title;
     $("#video").attr('src',`https://www.youtube.com/embed/${videoID}`);
     //thumbnail images for reLATED VIDEOS
     $("#suggest1").attr('src', data.items[1].snippet.thumbnails.default.url)
     $("#suggest2").attr('src', data.items[2].snippet.thumbnails.default.url)
     $("#suggest3").attr('src', data.items[3].snippet.thumbnails.default.url)
-
+    
+    $("#cap1").text(data.items[1].snippet.title);
+    $("#cap2").text(data.items[2].snippet.title);
+    $("#cap3").text(data.items[3].snippet.title);
   });
 
   var wikiFrame = $('#wikiframe');
@@ -116,16 +121,15 @@ function addItemToList(fieldValue)
 //calling global variables of related video urls into youtube box
 var suggest1 = $('#suggest1');
   suggest1.on('click', function(){
-    console.log("TESTING1");
      $('#video').attr('src', 'https://www.youtube.com/embed/' + suggID1)
   })
   var suggest2 = $('#suggest2');
   suggest2.on('click', function(){
-    console.log("TESTING2")
      $('#video').attr('src', 'https://www.youtube.com/embed/' + suggID2)
   })
   var suggest3 = $('#suggest3');
   suggest3.on('click', function(){
-    console.log("TESTING3")
      $('#video').attr('src', 'https://www.youtube.com/embed/' + suggID3)
   })
+
+    
