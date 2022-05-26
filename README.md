@@ -1,6 +1,6 @@
-##BOUGIE FOODIE
+## BOUGIE FOODIE
 
-#The idea for BougieFoodie came about as a means to not only learn about the process 
+## The idea for BougieFoodie came about as a means to not only learn about the process 
 of making any given dish, but also having a convenient space to learn about the cultural and
 historical relevance as well.
 
@@ -12,7 +12,7 @@ wikipedia article on the subject as well as a choice of 4 youtube videos to be a
 learning tool.
 
 
-##USAGE
+## USAGE
 
 1.Once you enter our website click on the main search bar 
 
@@ -25,7 +25,7 @@ learning tool.
 
 
 
-##CREDITS
+## CREDITS
 
 Jimmy Reilly, Marvin Bolanos, Stephanie Mathis and Michael Marlowe all collaborated 
 in a joint effort to bring the site to full functionality.
