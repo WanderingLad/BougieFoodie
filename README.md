@@ -37,7 +37,7 @@ Michael Marlowe: github.com/MarloweMich
 
 The english wikipedia API was utilized as well as the YouTube API.
 
-![](2022-02-14-18-26-19.png)
+![](assets/images/2022-02-14-18-26-19.png)
 
 Deployed site: https://marlowemich.github.io/BougieFoodie/
 
