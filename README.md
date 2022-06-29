@@ -1,6 +1,6 @@
 ## BOUGIE FOODIE
 
-## The idea for BougieFoodie came about as a means to not only learn about the process 
+The idea for BougieFoodie came about as a means to not only learn about the process 
 of making any given dish, but also having a convenient space to learn about the cultural and
 historical relevance as well.
 
